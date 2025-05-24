@@ -352,6 +352,7 @@ $$
 
 ### Hasil Proyek Berdasarkan Metrik Evaluasi
 ![image](https://github.com/user-attachments/assets/064f4bc8-cac0-4f21-a2a7-33aaca8cfe91)
+
 Berdasarkan hasil evaluasi, model Gradient Boosting Regressor menunjukkan performa yang lebih baik dibandingkan Linear Regression. Hal ini terlihat dari nilai MAE (Mean Absolute Error) sebesar 3.93 yang lebih rendah dibandingkan Linear Regression sebesar 4.65, serta nilai MSE (Mean Squared Error) sebesar 27.93 yang juga lebih kecil dibandingkan 37.24. Selain itu, R² Score dari Gradient Boosting mencapai 0.86, lebih tinggi dari Linear Regression yang hanya 0.81, yang menunjukkan bahwa model ini mampu menjelaskan variasi data target dengan lebih baik. Dari hasil evaluasi, dapat disimpulkan bahwa **Gradient Boosting Regressor** memberikan performa yang lebih baik dibanding **Linear Regression**, ditunjukkan oleh nilai MAE dan MSE yang lebih rendah serta R² Score yang lebih tinggi.
 
 

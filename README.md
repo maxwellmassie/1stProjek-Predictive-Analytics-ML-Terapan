@@ -149,8 +149,16 @@ Distribusi kualitas diet (Diet_Quality) menunjukkan pola yang mendekati normal, 
 Distribusi durasi tidur (Sleep_Hours) menunjukkan pola yang mendekati normal, dengan mayoritas individu tidur antara 6 hingga 8 jam per malam, mencerminkan durasi tidur yang direkomendasikan. Meskipun sebagian besar data terpusat di rentang tersebut, boxplot mengidentifikasi beberapa outlier di kedua sisi ekstrem, yaitu individu dengan durasi tidur yang sangat singkat (sekitar 3 jam) dan durasi tidur yang sangat panjang (mendekati 12 jam).
 
 #### Distribution of Smoking_Status & Boxplot of Smoking_Status
+![image](https://github.com/user-attachments/assets/c470112b-c4bc-4edc-8e04-7356cb390dd3)
+Distribusi status merokok (Smoking_Status) menunjukkan pola biner yang hampir seimbang, dengan sekitar 500 individu dikategorikan sebagai non-perokok (nilai 0) dan sekitar 500 lainnya sebagai perokok (nilai 1). Karena ini adalah variabel kategori, boxplot tidak memberikan informasi tentang outlier dan hanya mengonfirmasi adanya dua kategori yang jelas terpisah.
+
 #### Distribution of Alcohol_Consumpttion & Boxplot of Alcohol_Consumpttion
+![image](https://github.com/user-attachments/assets/f520f3d0-e1f9-472f-9855-16d1ec2d2397)
+Distribusi konsumsi alkohol (Alcohol_Consumption) menunjukkan pola yang mendekati normal, dengan sebagian besar individu mengonsumsi alkohol antara 2 hingga 5 unit per minggu. Namun, boxplot dengan jelas mengidentifikasi adanya beberapa outlier di kedua sisi ekstrem, terutama nilai negatif (sekitar -3 hingga -4) yang merupakan anomali data dan harus ditangani karena konsumsi alkohol tidak mungkin bernilai negatif, serta beberapa individu dengan konsumsi yang sangat tinggi (sekitar 11 unit).
+
 #### Distribution of Health_Score & Boxplot of Health_Score
+![image](https://github.com/user-attachments/assets/13ebc96c-eb3d-4be3-9040-85a655a7ed7f)
+Distribusi Health_Score menunjukkan kemiringan ke kiri (left-skewed) yang kuat, dengan sebagian besar individu memiliki skor kesehatan tinggi, bahkan banyak yang mencapai skor sempurna 100. Meskipun demikian, boxplot mengidentifikasi beberapa outlier di sisi bawah (skor kesehatan sangat rendah, di bawah 40), menunjukkan adanya segelintir individu dengan kondisi kesehatan yang jauh lebih buruk dibandingkan mayoritas populasi.
 
 
 ### Multivariate  Analysis

@@ -302,6 +302,7 @@ Berdasarkan grafik Feature Importance dari model Gradient Boosting Regressor, Di
 
 Menggunakan 3 metrik evaluasi:
 1. **MAE (Mean Absolute Error)** adalah Rata-rata dari kesalahan yang dihitung berdasarkan nilai absolut antara nilai sebenarnya dan nilai prediksi. dengan rumus sebagai berikut:
+
 **Rumus:**
 $$
 MAE = \frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y}_i|
@@ -314,15 +315,20 @@ $$
 
 
 2. **MSE (Mean Squared Error)** adalah Nilai rata-rata dari kuadrat selisih antara nilai aktual dan nilai yang diprediksi oleh model. dengan rumus sebagai berikut:
+
+**Rumus:**
 $$
 MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
 $$
+
 * $n$ adalah jumlah sampel data
 * $y_i$ adalah nilai aktual untuk sampel ke-$i$
 * $\hat{y}_i$ (dibaca "y-topi") adalah nilai prediksi untuk sampel ke-$i$
 
 
 3. **R² Score** (Koefisien Determinasi) adalah Salah satu ukuran yang digunakan untuk menilai seberapa efektif model regresi linear dalam menjelaskan variasi yang terdapat dalam data. dengan rumus sebagai berikut:
+
+**Rumus:**
 $$
 R^2 = 1 - \frac{SSR}{SST}
 $$
@@ -331,9 +337,13 @@ $$
 * $SST$ (Total Sum of Squares) adalah jumlah kuadrat total
 
 **dijabarkan dengan**:
+
+**Rumus:**
 $$
 R^2 = 1 - \frac{\sum_{i=1}^{n} (y_i - \hat{y}_i)^2}{\sum_{i=1}^{n} (y_i - \bar{y})^2}
 $$
+
+
 * $n$ adalah jumlah sampel data
 * $y_i$ adalah nilai aktual untuk sampel ke-$i$
 * $\hat{y}_i$ (dibaca "y-topi") adalah nilai prediksi untuk sampel ke-$i$

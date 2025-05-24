@@ -208,13 +208,33 @@ X_train[num_features] = scaler.fit_transform(X_train[num_features])
 X_test[num_features] = scaler.transform(X_test[num_features])
 ```
 
-## Modeling
-Tahapan ini membahas mengenai model machine learning yang digunakan untuk menyelesaikan permasalahan. Anda perlu menjelaskan tahapan dan parameter yang digunakan pada proses pemodelan.
+## Pembangunan Model Solution
+### 6.1 Model Solution dengan Linear Regression
+Pada tahap ini, model pertama yang digunakan adalah Linear Regression, yang merupakan algoritma regresi linier sederhana dan interpretatif. Model ini diinisialisasi tanpa parameter khusus, karena scikit-learn telah menyediakan nilai default yang umumnya cukup baik untuk baseline.
 
-**Rubrik/Kriteria Tambahan (Opsional)**: 
-- Menjelaskan kelebihan dan kekurangan dari setiap algoritma yang digunakan.
-- Jika menggunakan satu algoritma pada solution statement, lakukan proses improvement terhadap model dengan hyperparameter tuning. **Jelaskan proses improvement yang dilakukan**.
-- Jika menggunakan dua atau lebih algoritma pada solution statement, maka pilih model terbaik sebagai solusi. **Jelaskan mengapa memilih model tersebut sebagai model terbaik**.
+#### Alasan Pemilihan Linear Regression
+Linear Regression dipilih sebagai baseline karena sifatnya yang sederhana, cepat, dan mudah diinterpretasikan. Ini memungkinkan evaluasi awal performa model sebelum melanjutkan ke model yang lebih kompleks.
+
+**Kelebihan Linear Regression**:
+- ✅ **Interpretabilitas Tinggi**: Koefisien regresi dapat digunakan untuk mengukur pengaruh setiap fitur terhadap target.
+- ⚡ **Kecepatan Pelatihan**: Linear Regression sangat cepat dalam proses pelatihan, bahkan pada dataset skala besar.
+- 🎯 **Cocok untuk Baseline**: Karena kesederhanaannya, model ini ideal untuk memberikan gambaran awal terhadap performa model lain.
+
+**Kekurangan Linear Regression**:
+- ❌ **Tidak Menangkap Hubungan Non-Linear**: Model ini hanya efektif jika hubungan antar variabel bersifat linier.
+- ⚠️ **Sensitif terhadap Outlier**: Kehadiran outlier dapat secara signifikan memengaruhi garis regresi yang dihasilkan.
+- 🔁 **Rentan terhadap Multikolinearitas**: Ketika dua atau lebih fitur sangat berkorelasi, model dapat menjadi tidak stabil dan koefisien sulit diinterpretasikan.
+
+#### Code Program Linear Regression
+melatih model dengan data X_train dan y_train
+```
+# Inisialisasi model Linear Regresi
+lr_model = LinearRegression()
+# melatih model dengan data training
+lr_model.fit(X_train, y_train)
+```
+
+### 6.2 Model Solution dengan GradientBoostingRegressor
 
 ## Evaluation
 Pada bagian ini anda perlu menyebutkan metrik evaluasi yang digunakan. Lalu anda perlu menjelaskan hasil proyek berdasarkan metrik evaluasi yang digunakan.

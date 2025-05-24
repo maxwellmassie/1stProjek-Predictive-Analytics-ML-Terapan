@@ -209,7 +209,7 @@ X_test[num_features] = scaler.transform(X_test[num_features])
 ```
 
 ## Pembangunan Model Solution
-### 6.1 Model Solution dengan Linear Regression
+### 1 Model Solution dengan Linear Regression
 Pada tahap ini, model pertama yang digunakan adalah Linear Regression, yang merupakan algoritma regresi linier sederhana dan interpretatif. Model ini diinisialisasi tanpa parameter khusus, karena scikit-learn telah menyediakan nilai default yang umumnya cukup baik untuk baseline.
 
 #### Alasan Pemilihan Linear Regression
@@ -227,14 +227,74 @@ Linear Regression dipilih sebagai baseline karena sifatnya yang sederhana, cepat
 
 #### Code Program Linear Regression
 melatih model dengan data X_train dan y_train
-```
+```python
 # Inisialisasi model Linear Regresi
 lr_model = LinearRegression()
 # melatih model dengan data training
 lr_model.fit(X_train, y_train)
 ```
 
-### 6.2 Model Solution dengan GradientBoostingRegressor
+### 2 Model Solution dengan GradientBoostingRegressor
+Pada tahap ini, model kedua yang digunakan adalah Gradient Boosting Regressor (GBR), yaitu algoritma ensemble learning yang bekerja dengan membangun model secara bertahap dan menggabungkan banyak pohon keputusan (decision trees) yang lemah untuk membentuk prediksi yang kuat. Model ini terkenal karena kemampuannya dalam menangani hubungan non-linear secara efektif.
+Model diinisialisasi menggunakan parameter default dari ```sklearn.ensemble.GradientBoostingRegressor```, dengan penambahan ```random_state=42``` untuk memastikan bahwa proses pelatihan dapat direplikasi dengan hasil yang konsisten.
+
+#### parameter default ```random_state=42```
+bertujuan untuk mengontrol randomness selama pelatihan, seperti proses pembentukan pohon dan sampling data. Dengan menetapkan random_state=42, kita memastikan hasil pelatihan model akan konsisten dan dapat direplikasi di berbagai eksperimen.
+Angka 42 sering digunakan sebagai nilai default karena sifatnya yang netral dan banyak digunakan dalam praktik data science.
+
+**Kelebihan Gradient Boosting Regressor**:
+- **Mampu Menangkap Hubungan Non-Linear**: Cocok untuk data dengan pola yang kompleks dan tidak linier.
+- **Performa Tinggi**: Model ini seringkali menghasilkan akurasi yang tinggi dibandingkan algoritma regresi lainnya.
+= **Robust terhadap Outlier**: Lebih tahan terhadap pengaruh data ekstrem dibandingkan model linier.
+- **Interaksi Fitur**: Dapat menangani interaksi antar fitur tanpa perlu eksplisit mendefinisikannya.
+
+**Kekurangan Gradient Boosting Regressor**:
+- **Training Time Lebih Lama**: Dibandingkan dengan model sederhana seperti Linear Regression, GBR membutuhkan waktu komputasi lebih tinggi.
+- **Memerlukan Hyperparameter Tuning**: Agar performa optimal, model ini memerlukan penyesuaian parameter
+
+#### Code Program Gradient Boosting Regressor
+```python
+# Inisialisasi model GradientBoostingRegressor
+gbr_model = GradientBoostingRegressor(random_state=42)
+# melatih model dengan data training
+gbr_model.fit(X_train, y_train)
+```
+
+#### Pemilihan Model Terbaik
+Pemilihan model terbaik akan dilakukan berdasarkan hasil evaluasi metrik regresi (MAE, MSE, dan R²) yang akan dijelaskan di tahap selanjutnya.
+
+### 3. Feature Importances
+Pada tahap Feature Importance, dengan menggunakan model Gradient Boosting Regressor yang telah dilatih untuk mengevaluasi seberapa besar kontribusi masing-masing fitur dalam memprediksi Health_Score. Hasilnya ditampilkan dalam bentuk tabel dan visualisasi bar chart.
+#### kode Feature Importances
+```python
+# Mendapatkan nilai feature importance dari model Gradient Boosting
+importances = gbr_model.feature_importances_
+
+# Mendapatkan nama fitur
+feature_names = X.columns  # asumsi X adalah DataFrame berisi fitur
+
+# Menggabungkan dalam DataFrame agar mudah dianalisis
+feature_importance_df = pd.DataFrame({
+    'Feature': feature_names,
+    'Importance': importances
+}).sort_values(by='Importance', ascending=False)
+
+# menampilkan data tabular feature importance
+print(feature_importance_df)
+
+plt.figure(figsize=(10, 6))
+sns.barplot(x='Importance', y='Feature', data=feature_importance_df, palette='viridis')
+plt.title('Feature Importance - Gradient Boosting Regressor')
+plt.xlabel('Importance Score')
+plt.ylabel('Features')
+plt.tight_layout()
+plt.show()
+```
+
+#### Output Feature Importances
+![image](https://github.com/user-attachments/assets/e416560c-e2bb-4a18-b0a6-25d8151e2400)
+Berdasarkan grafik Feature Importance dari model Gradient Boosting Regressor, Diet_Quality merupakan faktor yang paling penting dalam memprediksi Health Score dengan importance score tertinggi (0.522). Disusul oleh BMI (0.212), Exercise_Frequency (0.087), dan Sleep_Hours (0.082) yang juga memiliki pengaruh signifikan. Sementara itu, Age, Alcohol_Consumption, dan Smoking_Status menunjukkan tingkat kepentingan yang relatif jauh lebih rendah dalam memprediksi Health Score.
+
 
 ## Evaluation
 Pada bagian ini anda perlu menyebutkan metrik evaluasi yang digunakan. Lalu anda perlu menjelaskan hasil proyek berdasarkan metrik evaluasi yang digunakan.

@@ -183,20 +183,20 @@ Berdasarkan heatmap korelasi, terlihat bahwa variabel 'Health_Score' memiliki ko
 
 ## Data Preparation
 1. Memisahkan fitur(Independent) dan target(dependent).
-```
+```python
 # memisahkan variable independent dan dependent
 X = df.drop('Health_Score', axis=1)
 y = df['Health_Score']
 ```
 
 2. Membagi dataset menjadi data train dan test agar model dapat dilatih dan dievaluasi secara objektif pada data yang belum pernah dilihat sebelumnya
-```
+```python
 # Membagi data menjadi train dan test (80% train, 20% test)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 ```
 
 3. Melakukan standardisasi pada fitur numerik supaya semua fitur memiliki skala yang seragam, sehingga model dapat belajar lebih efektif dan prediksi menjadi lebih akurat.
-```
+```python
 # Daftar fitur numerik untuk distandarisasi
 num_features = ['Age', 'BMI', 'Exercise_Frequency', 'Diet_Quality', 'Sleep_Hours', 'Alcohol_Consumption']
 

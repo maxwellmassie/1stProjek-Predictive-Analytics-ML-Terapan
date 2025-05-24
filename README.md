@@ -298,16 +298,46 @@ Berdasarkan grafik Feature Importance dari model Gradient Boosting Regressor, Di
 
 
 ## Evaluation
-Pada bagian ini anda perlu menyebutkan metrik evaluasi yang digunakan. Lalu anda perlu menjelaskan hasil proyek berdasarkan metrik evaluasi yang digunakan.
+# **8. Evaluasi**
 
-Sebagai contoh, Anda memiih kasus klasifikasi dan menggunakan metrik **akurasi, precision, recall, dan F1 score**. Jelaskan mengenai beberapa hal berikut:
-- Penjelasan mengenai metrik yang digunakan
-- Menjelaskan hasil proyek berdasarkan metrik evaluasi
+Menggunakan 3 metrik evaluasi:
+1. **MAE (Mean Absolute Error)** adalah Rata-rata dari kesalahan yang dihitung berdasarkan nilai absolut antara nilai sebenarnya dan nilai prediksi. dengan rumus sebagai berikut:
+$$
+MAE = \frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y}_i|
+$$
+* $n$ adalah jumlah sampel data
+* $y_i$ adalah nilai aktual untuk sampel ke-$i$
+* $\hat{y}_i$ (dibaca "y-topi") adalah nilai prediksi untuk sampel ke-$i$
+* $|y_i - \hat{y}_i|$ adalah nilai absolut dari selisih antara nilai aktual dan nilai prediksi
 
-Ingatlah, metrik evaluasi yang digunakan harus sesuai dengan konteks data, problem statement, dan solusi yang diinginkan.
 
-**Rubrik/Kriteria Tambahan (Opsional)**: 
-- Menjelaskan formula metrik dan bagaimana metrik tersebut bekerja.
+2. **MSE (Mean Squared Error)** adalah Nilai rata-rata dari kuadrat selisih antara nilai aktual dan nilai yang diprediksi oleh model. dengan rumus sebagai berikut:
+$$
+MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
+$$
+* $n$ adalah jumlah sampel data
+* $y_i$ adalah nilai aktual untuk sampel ke-$i$
+* $\hat{y}_i$ (dibaca "y-topi") adalah nilai prediksi untuk sampel ke-$i$
+
+
+3. **R² Score** (Koefisien Determinasi) adalah Salah satu ukuran yang digunakan untuk menilai seberapa efektif model regresi linear dalam menjelaskan variasi yang terdapat dalam data. dengan rumus sebagai berikut:
+$$
+R^2 = 1 - \frac{SSR}{SST}
+$$
+
+* $SSR$ (Sum of Squares of Residuals) adalah jumlah kuadrat sisa (error)
+* $SST$ (Total Sum of Squares) adalah jumlah kuadrat total
+
+**dijabarkan dengan**:
+$$
+R^2 = 1 - \frac{\sum_{i=1}^{n} (y_i - \hat{y}_i)^2}{\sum_{i=1}^{n} (y_i - \bar{y})^2}
+$$
+* $n$ adalah jumlah sampel data
+* $y_i$ adalah nilai aktual untuk sampel ke-$i$
+* $\hat{y}_i$ (dibaca "y-topi") adalah nilai prediksi untuk sampel ke-$i$
+* $\bar{y}$ (dibaca "y-bar") adalah nilai rata-rata dari nilai aktual ($y_i$)
+* $\sum_{i=1}^{n} (y_i - \hat{y}_i)^2$ adalah Sum of Squares of Residuals (SSR), yang mengukur variasi yang tidak dijelaskan oleh model.
+* $\sum_{i=1}^{n} (y_i - \bar{y})^2$ adalah Total Sum of Squares (SST), yang mengukur total variasi dalam variabel dependen.
 
 **---Ini adalah bagian akhir laporan---**
 

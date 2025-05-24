@@ -17,8 +17,8 @@ Masalah yang Ingin Diselesaikan
 
 Penyakit tidak menular yang disebabkan oleh gaya hidup buruk menyumbang beban besar pada sistem kesehatan dan ekonomi nasional. Dengan memahami hubungan antara variabel gaya hidup dan skor kesehatan, serta mengidentifikasi faktor yang paling dominan, intervensi dapat lebih tepat sasaran dan efektif. Hal ini mendukung upaya pencegahan yang lebih baik dan meningkatkan kualitas hidup masyarakat secara keseluruhan.
 
----
-Referensi
+**Referensi**
+
 [1] Kementerian Kesehatan Republik Indonesia, Laporan Nasional Riskesdas 2018, Jakarta: Kemenkes RI, 2018. [Online]. Tersedia: http://www.depkes.go.id/resources/download/info-terkini/hasil-riskesdas-2018.pdf
 
 [2] D. Mwai dan M. Muriithi, "Non-Communicable Diseases Risk Factors And Their Contribution To Ncd Incidences In Kenya," European Scientific Journal, vol. 11, no. 30, 2015. [Online]. Tersedia: https://eujournal.org/index.php/esj/article/view/6367

@@ -340,7 +340,7 @@ $$
 * $SST$ (Total Sum of Squares) adalah jumlah kuadrat total
 
 #### **dijabarkan dengan rumus**:
-![image](https://github.com/user-attachments/assets/5a0f5aa8-46bc-40dc-b552-4cdcf9a6e473)
+![image](https://github.com/user-attachments/assets/4ee5f346-86c7-4210-a508-d08d4dd84b98)
 
 
 * $n$ adalah jumlah sampel data

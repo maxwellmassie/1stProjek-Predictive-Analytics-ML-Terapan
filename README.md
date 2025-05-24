@@ -182,11 +182,31 @@ Berdasarkan heatmap korelasi, terlihat bahwa variabel 'Health_Score' memiliki ko
 
 
 ## Data Preparation
-Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
+1. Memisahkan fitur(Independent) dan target(dependent).
+```
+# memisahkan variable independent dan dependent
+X = df.drop('Health_Score', axis=1)
+y = df['Health_Score']
+```
 
-**Rubrik/Kriteria Tambahan (Opsional)**: 
-- Menjelaskan proses data preparation yang dilakukan
-- Menjelaskan alasan mengapa diperlukan tahapan data preparation tersebut.
+2. Membagi dataset menjadi data train dan test agar model dapat dilatih dan dievaluasi secara objektif pada data yang belum pernah dilihat sebelumnya
+```
+# Membagi data menjadi train dan test (80% train, 20% test)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+```
+
+3. Melakukan standardisasi pada fitur numerik supaya semua fitur memiliki skala yang seragam, sehingga model dapat belajar lebih efektif dan prediksi menjadi lebih akurat.
+```
+# Daftar fitur numerik untuk distandarisasi
+num_features = ['Age', 'BMI', 'Exercise_Frequency', 'Diet_Quality', 'Sleep_Hours', 'Alcohol_Consumption']
+
+# Inisialisasi scaler
+scaler = StandardScaler()
+
+# Fit scaler hanya di data train, lalu transformasi train dan test
+X_train[num_features] = scaler.fit_transform(X_train[num_features])
+X_test[num_features] = scaler.transform(X_test[num_features])
+```
 
 ## Modeling
 Tahapan ini membahas mengenai model machine learning yang digunakan untuk menyelesaikan permasalahan. Anda perlu menjelaskan tahapan dan parameter yang digunakan pada proses pemodelan.

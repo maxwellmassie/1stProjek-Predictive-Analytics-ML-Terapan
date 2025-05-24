@@ -302,9 +302,11 @@ Berdasarkan grafik Feature Importance dari model Gradient Boosting Regressor, Di
 
 Menggunakan 3 metrik evaluasi:
 1. **MAE (Mean Absolute Error)** adalah Rata-rata dari kesalahan yang dihitung berdasarkan nilai absolut antara nilai sebenarnya dan nilai prediksi. dengan rumus sebagai berikut:
+
 $$
 MAE = \frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y}_i|
 $$
+
 * $n$ adalah jumlah sampel data
 * $y_i$ adalah nilai aktual untuk sampel ke-$i$
 * $\hat{y}_i$ (dibaca "y-topi") adalah nilai prediksi untuk sampel ke-$i$

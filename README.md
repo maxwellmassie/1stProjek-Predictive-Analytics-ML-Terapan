@@ -58,12 +58,15 @@ Keberhasilan proyek ini akan diukur menggunakan tiga metrik evaluasi utama dalam
 Dataset ini digunakan untuk menganalisis dampak berbagai faktor gaya hidup terhadap Health Score seseorang dengan pendekatan regresi. Data ini mencakup variabel-variabel seperti usia, indeks massa tubuh (BMI), frekuensi olahraga, kualitas diet, durasi tidur, status merokok, dan konsumsi alkohol. Dataset ini sangat cocok untuk eksplorasi data, pembangunan model machine learning, serta pemahaman hubungan antara gaya hidup dan kesehatan. 
 - Health and Lifestyle Data for Regression: [Kaggle](https://www.kaggle.com/datasets/pratikyuvrajchougule/health-and-lifestyle-data-for-regression/).
 
-Selanjutnya uraikanlah seluruh variabel atau fitur pada data. Sebagai contoh:  
-
-### Variabel-variabel pada Restaurant UCI dataset adalah sebagai berikut:
-- accepts : merupakan jenis pembayaran yang diterima pada restoran tertentu.
-- cuisine : merupakan jenis masakan yang disajikan pada restoran.
-- dst
+### Variabel-variabel pada Health and Lifestyle Data for Regression dataset adalah sebagai berikut:
+- **Age**: Usia individu dalam satuan tahun. Bertipe _continuous variable_.
+- **BMI**: Body Mass Index (Indeks Massa Tubuh) individu, digunakan untuk mengukur status berat badan. Bertipe _continuous variable_.
+- **Exercise_Frequency**: Jumlah hari dalam seminggu individu melakukan olahraga. Bertipe _categorical_ dengan nilai 0–7.
+- **Diet_Quality**: Indeks kualitas pola makan, di mana nilai yang lebih tinggi mencerminkan pola makan yang lebih sehat. Skala 0–100, bertipe _continuous_.
+- **Sleep_Hours**: Rata-rata jam tidur individu setiap malam. Bertipe _continuous_.
+- **Smoking_Status**: Status merokok individu, di mana 0 = Non-smoker dan 1 = Smoker. Bertipe _binary categorical_.
+- **Alcohol_Consumption**: Rata-rata jumlah konsumsi alkohol per minggu dalam satuan unit. Bertipe _continuous_.
+- **Health_Score**: Skor kesehatan yang dihitung berdasarkan faktor-faktor gaya hidup di atas, mencerminkan status kesehatan secara keseluruhan. Skala 0–100, bertipe _continuous_.
 
 **Rubrik/Kriteria Tambahan (Opsional)**:
 - Melakukan beberapa tahapan yang diperlukan untuk memahami data, contohnya teknik visualisasi data atau exploratory data analysis.

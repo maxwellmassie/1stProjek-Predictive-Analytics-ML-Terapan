@@ -70,7 +70,7 @@ Dataset ini digunakan untuk menganalisis dampak berbagai faktor gaya hidup terha
 
 ### Exploratory Data Analysis (EDA)
 
-- Menampilkan Info dataset
+#### Menampilkan Info dataset
 
 | No | Kolom                | Jumlah Non-Null | Tipe Data |
 |----|----------------------|------------------|-----------|
@@ -91,7 +91,7 @@ dari hasil df.info() dapat lihat:
 - Jumlah data: 1000 baris dengan 8 kolom
 - 6 kolom numerik (float64) dan 2 kolom integer (int64)
 
-  #### Menampilkan Deskriptif Dataset
+#### Menampilkan Deskriptif Dataset
 
 | Statistik | Age     | BMI     | Exercise_Frequency | Diet_Quality | Sleep_Hours | Smoking_Status | Alcohol_Consumption | Health_Score |
 |-----------|---------|---------|---------------------|--------------|-------------|----------------|----------------------|---------------|

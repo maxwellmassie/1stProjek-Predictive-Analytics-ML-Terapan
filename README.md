@@ -162,7 +162,22 @@ Distribusi Health_Score menunjukkan kemiringan ke kiri (left-skewed) yang kuat, 
 
 
 ### Multivariate  Analysis
+#### Pairplot beberapa fitur dan Health_Score
+![aprplot](https://github.com/user-attachments/assets/297c6bf7-ae0c-48ac-bc8d-eefbb9fbeaec)
+Pairplot ini mengilustrasikan hubungan antar variabel gaya hidup dan Health_Score. Terlihat jelas bahwa Diet_Quality memiliki korelasi positif yang kuat dengan Health_Score, menunjukkan bahwa diet yang lebih baik berhubungan dengan skor kesehatan yang lebih tinggi. Sebaliknya, Age dan BMI cenderung berkorelasi negatif dengan Health_Score, mengindikasikan bahwa peningkatan usia atau BMI umumnya berkaitan dengan penurunan skor kesehatan.
+Sementara itu, Exercise_Frequency dan Sleep_Hours menunjukkan hubungan yang lebih menyebar dengan Health_Score, menandakan bahwa pengaruhnya mungkin tidak sekuat tiga variabel sebelumnya dan memerlukan analisis lebih lanjut. Penting juga dicatat bahwa secara visual, tidak ada indikasi multikolinearitas yang parah di antara fitur-fitur prediktor, yang merupakan kondisi baik untuk pembangunan model regresi.
 
+#### Health_Score berdasarkan Smoking_Status
+![image](https://github.com/user-attachments/assets/a5a46d9e-680b-47d6-a00e-c26e81c6fee3)
+Berdasarkan box plot tersebut, terlihat bahwa Health Score untuk kedua kelompok Smoking Status (0 dan 1) memiliki median yang relatif tinggi, sekitar 85-90. Namun, kelompok Smoking Status 0 menunjukkan rentang interkuartil (IQR) yang lebih lebar, dengan nilai-nilai yang cenderung lebih rendah dan beberapa outlier di bawah 50, bahkan mendekati 40. Sementara itu, kelompok Smoking Status 1 memiliki IQR yang sedikit lebih sempit dan juga menunjukkan beberapa outlier di bawah 45, bahkan mendekati 30. Secara umum, meskipun median Health Score serupa, distribusi Health Score untuk perokok (Smoking Status 1) sedikit lebih menyebar ke bawah dibandingkan non-perokok (Smoking Status 0).
+
+#### Scatter plot BMI vs Health_Score
+![image](https://github.com/user-attachments/assets/54579400-c71e-4af6-b905-bbd63d3c1127)
+Berdasarkan scatter plot BMI vs Health Score, terlihat bahwa tidak ada korelasi linear yang kuat antara kedua variabel tersebut. Meskipun sebagian besar Health Score cenderung tinggi (di atas 70) terutama pada rentang BMI sekitar 15-25, sebaran titik-titik data menunjukkan pola yang menyebar tanpa tren naik atau turun yang jelas. Hal ini mengindikasikan bahwa perubahan BMI tidak secara konsisten memprediksi perubahan Health Score, dan banyak individu dengan berbagai nilai BMI dapat memiliki Health Score yang bervariasi.
+
+#### Correlation Map
+![image](https://github.com/user-attachments/assets/44411c86-fd32-4d89-a1d3-c0dfdd23f4c0)
+Berdasarkan heatmap korelasi, terlihat bahwa variabel 'Health_Score' memiliki korelasi positif yang cukup kuat dengan 'Diet_Quality' (0.68) dan 'Sleep_Hours' (0.27), menunjukkan bahwa diet yang baik dan tidur yang cukup cenderung berhubungan dengan Health Score yang lebih tinggi. Sebaliknya, 'Health_Score' memiliki korelasi negatif yang cukup kuat dengan 'BMI' (-0.42) dan 'Age' (-0.19), yang mengindikasikan bahwa BMI dan usia yang lebih tinggi cenderung berhubungan dengan Health Score yang lebih rendah. Variabel lain seperti 'Exercise_Frequency', 'Smoking_Status', dan 'Alcohol_Consumption' menunjukkan korelasi yang sangat lemah atau hampir tidak ada dengan 'Health_Score'.
 
 
 

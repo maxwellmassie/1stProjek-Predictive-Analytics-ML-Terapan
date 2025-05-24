@@ -350,6 +350,17 @@ $$
 * $\sum_{i=1}^{n} (y_i - \hat{y}_i)^2$ adalah Sum of Squares of Residuals (SSR), yang mengukur variasi yang tidak dijelaskan oleh model.
 * $\sum_{i=1}^{n} (y_i - \bar{y})^2$ adalah Total Sum of Squares (SST), yang mengukur total variasi dalam variabel dependen.
 
+### Hasil Proyek Berdasarkan Metrik Evaluasi
+![image](https://github.com/user-attachments/assets/064f4bc8-cac0-4f21-a2a7-33aaca8cfe91)
+Berdasarkan hasil evaluasi, model Gradient Boosting Regressor menunjukkan performa yang lebih baik dibandingkan Linear Regression. Hal ini terlihat dari nilai MAE (Mean Absolute Error) sebesar 3.93 yang lebih rendah dibandingkan Linear Regression sebesar 4.65, serta nilai MSE (Mean Squared Error) sebesar 27.93 yang juga lebih kecil dibandingkan 37.24. Selain itu, R² Score dari Gradient Boosting mencapai 0.86, lebih tinggi dari Linear Regression yang hanya 0.81, yang menunjukkan bahwa model ini mampu menjelaskan variasi data target dengan lebih baik. Dari hasil evaluasi, dapat disimpulkan bahwa **Gradient Boosting Regressor** memberikan performa yang lebih baik dibanding **Linear Regression**, ditunjukkan oleh nilai MAE dan MSE yang lebih rendah serta R² Score yang lebih tinggi.
+
+
 ## Penutup & Kesimpulan
+Berdasarkan keseluruhan proses analisis dan pemodelan yang telah dilakukan, dapat disimpulkan bahwa variabel-variabel gaya hidup seperti usia, indeks massa tubuh (BMI), kualitas pola makan, durasi tidur, frekuensi olahraga, kebiasaan merokok, dan konsumsi alkohol memiliki hubungan yang bermakna terhadap skor kesehatan individu. Model Gradient Boosting Regressor menunjukkan performa prediksi yang lebih unggul dibandingkan Linear Regression, sehingga mampu mengestimasi skor kesehatan dengan tingkat akurasi yang lebih tinggi. Selain itu, hasil analisis feature importance mengungkap bahwa  kualitas diet merupakan faktor yang paling berpengaruh terhadap peningkatan atau penurunan Health Score. Analisa ini menegaskan bahwa data gaya hidup dapat dimanfaatkan secara optimal sebagai dasar pengambilan keputusan preventif dan perumusan strategi peningkatan kualitas kesehatan masyarakat yang lebih terarah, berbasis data, dan bersifat prediktif.
+
+---
+Salam,
+
+Maxwell Massie
 
 

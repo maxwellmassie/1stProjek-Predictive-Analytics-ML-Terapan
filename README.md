@@ -339,9 +339,7 @@ $$
 * $SSR$ (Sum of Squares of Residuals) adalah jumlah kuadrat sisa (error)
 * $SST$ (Total Sum of Squares) adalah jumlah kuadrat total
 
-**dijabarkan dengan**:
-
-**Rumus:**
+**dijabarkan dengan rumus**:
 
 $$
 R^2 = 1 - \frac{\sum_{i=1}^{n} (y_i - \hat{y}_i)^2}{\sum_{i=1}^{n} (y_i - \bar{y})^2}

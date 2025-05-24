@@ -352,9 +352,6 @@ $$
 * $\sum_{i=1}^{n} (y_i - \hat{y}_i)^2$ adalah Sum of Squares of Residuals (SSR), yang mengukur variasi yang tidak dijelaskan oleh model.
 * $\sum_{i=1}^{n} (y_i - \bar{y})^2$ adalah Total Sum of Squares (SST), yang mengukur total variasi dalam variabel dependen.
 
-**---Ini adalah bagian akhir laporan---**
+## Penutup & Kesimpulan
 
-_Catatan:_
-- _Anda dapat menambahkan gambar, kode, atau tabel ke dalam laporan jika diperlukan. Temukan caranya pada contoh dokumen markdown di situs editor [Dillinger](https://dillinger.io/), [Github Guides: Mastering markdown](https://guides.github.com/features/mastering-markdown/), atau sumber lain di internet. Semangat!_
-- Jika terdapat penjelasan yang harus menyertakan code snippet, tuliskan dengan sewajarnya. Tidak perlu menuliskan keseluruhan kode project, cukup bagian yang ingin dijelaskan saja.
 

@@ -31,9 +31,9 @@ Namun, belum tersedia banyak model prediktif yang secara kuantitatif mampu mengu
 
 ### Problem Statements
 
-- 1. Faktor gaya hidup manakah yang paling berpengaruh terhadap Health Score seseorang?
-- 2. Dapatkah dibangun model prediktif untuk mengestimasi Health Score hanya berdasarkan data gaya hidup?
-- Seberapa baik performa model dan model terbaik sebagai solusi ?
+1. Faktor gaya hidup manakah yang paling berpengaruh terhadap Health Score seseorang?
+2. Dapatkah dibangun model prediktif untuk mengestimasi Health Score hanya berdasarkan data gaya hidup?
+3. Seberapa baik performa model dan model terbaik sebagai solusi ?
 
 ### Goals
 

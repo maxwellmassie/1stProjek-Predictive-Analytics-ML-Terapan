@@ -209,7 +209,7 @@ X_test[num_features] = scaler.transform(X_test[num_features])
 ```
 
 ## Pembangunan Model Solution
-### 1 Model Solution dengan Linear Regression
+### 1. Model Solution dengan Linear Regression
 Pada tahap ini, model pertama yang digunakan adalah Linear Regression, yang merupakan algoritma regresi linier sederhana dan interpretatif. Model ini diinisialisasi tanpa parameter khusus, karena scikit-learn telah menyediakan nilai default yang umumnya cukup baik untuk baseline.
 
 #### Alasan Pemilihan Linear Regression
@@ -234,7 +234,7 @@ lr_model = LinearRegression()
 lr_model.fit(X_train, y_train)
 ```
 
-### 2 Model Solution dengan GradientBoostingRegressor
+### 2. Model Solution dengan GradientBoostingRegressor
 Pada tahap ini, model kedua yang digunakan adalah Gradient Boosting Regressor (GBR), yaitu algoritma ensemble learning yang bekerja dengan membangun model secara bertahap dan menggabungkan banyak pohon keputusan (decision trees) yang lemah untuk membentuk prediksi yang kuat. Model ini terkenal karena kemampuannya dalam menangani hubungan non-linear secara efektif.
 Model diinisialisasi menggunakan parameter default dari ```sklearn.ensemble.GradientBoostingRegressor```, dengan penambahan ```random_state=42``` untuk memastikan bahwa proses pelatihan dapat direplikasi dengan hasil yang konsisten.
 

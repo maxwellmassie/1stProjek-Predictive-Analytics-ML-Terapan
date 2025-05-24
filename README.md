@@ -127,6 +127,15 @@ tidak da misisng value pada dataset, sehingga tidak perlu dilakukan imputasi ata
 dari hasil df.duplicated() dapat lihat:
 Hasilnya menunjukkan jumlah data duplikat adalah 0, yang berarti tidak ada baris data yang sama persis, sehingga dataset benar-benar bersih dan siap digunakan untuk proses selanjutnya tanpa perlu penghapusan data duplikat.
 
+### Univariate Analysis
+#### Distribution of Age
+![image](https://github.com/user-attachments/assets/e3be7175-d520-4890-b216-fc0d8c62aa75)
+Distribusi usia dalam dataset cenderung berbentuk normal dengan sebagian besar data terpusat antara 25 hingga 55 tahun, berpuncak di sekitar 40 tahun. Meskipun sebarannya luas dari usia sangat muda hingga lansia, boxplot menunjukkan adanya beberapa outlier di kedua ujung, terutama usia yang sangat muda (mendekati 0) yang perlu diverifikasi validitasnya karena berpotensi menjadi data entry error
+
+
+### Multivariate  Analysis
+
+
 
 
 ## Data Preparation

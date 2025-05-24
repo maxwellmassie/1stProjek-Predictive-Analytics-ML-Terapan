@@ -19,7 +19,7 @@ Penyakit tidak menular yang disebabkan oleh gaya hidup buruk menyumbang beban be
 
 **Referensi**
 
-[1] Kementerian Kesehatan Republik Indonesia, Laporan Nasional Riskesdas 2018, Jakarta: Kemenkes RI, 2018. [Online]. Tersedia: http://www.depkes.go.id/resources/download/info-terkini/hasil-riskesdas-2018.pdf
+[1] Kementerian Kesehatan Republik Indonesia, Laporan Nasional Riskesdas 2018, Jakarta: Kemenkes RI, 2018. [Online]. Tersedia: https://repository.badankebijakan.kemkes.go.id/id/eprint/3514/1/Laporan%20Riskesdas%202018%20Nasional.pdf
 
 [2] D. Mwai dan M. Muriithi, "Non-Communicable Diseases Risk Factors And Their Contribution To Ncd Incidences In Kenya," European Scientific Journal, vol. 11, no. 30, 2015. [Online]. Tersedia: https://eujournal.org/index.php/esj/article/view/6367
 

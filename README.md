@@ -347,7 +347,6 @@ $$
 R^2 = 1 - \frac{\sum_{i=1}^{n} (y_i - \hat{y}_i)^2}{\sum_{i=1}^{n} (y_i - \bar{y})^2}
 $$
 
-
 * $n$ adalah jumlah sampel data
 * $y_i$ adalah nilai aktual untuk sampel ke-$i$
 * $\hat{y}_i$ (dibaca "y-topi") adalah nilai prediksi untuk sampel ke-$i$

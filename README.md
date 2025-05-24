@@ -128,9 +128,29 @@ dari hasil df.duplicated() dapat lihat:
 Hasilnya menunjukkan jumlah data duplikat adalah 0, yang berarti tidak ada baris data yang sama persis, sehingga dataset benar-benar bersih dan siap digunakan untuk proses selanjutnya tanpa perlu penghapusan data duplikat.
 
 ### Univariate Analysis
-#### Distribution of Age
+#### Distribution of Age & Boxplot of Age
 ![image](https://github.com/user-attachments/assets/e3be7175-d520-4890-b216-fc0d8c62aa75)
 Distribusi usia dalam dataset cenderung berbentuk normal dengan sebagian besar data terpusat antara 25 hingga 55 tahun, berpuncak di sekitar 40 tahun. Meskipun sebarannya luas dari usia sangat muda hingga lansia, boxplot menunjukkan adanya beberapa outlier di kedua ujung, terutama usia yang sangat muda (mendekati 0) yang perlu diverifikasi validitasnya karena berpotensi menjadi data entry error
+
+#### Distribution of BMI & Boxplot of BMI
+![image](https://github.com/user-attachments/assets/ffc64835-f176-4662-8a63-572254492a34)
+Distribusi BMI menunjukkan pola yang mendekati normal (bell-shaped) dengan sebagian besar individu berada di rentang BMI 20 hingga 30, yang mencakup kategori berat badan normal hingga sedikit kelebihan berat badan, dengan puncak di sekitar 25. Meskipun sebaran data cukup luas, boxplot mengindikasikan adanya beberapa outlier di kedua sisi ekstrem (BMI sangat rendah sekitar 10 dan sangat tinggi sekitar 40) yang merupakan kasus yang kurang umum namun valid dalam konteks indeks massa tubuh.
+
+#### Distribution of Exercise_Frequency & Boxplot of Exercise_Frequency
+![image](https://github.com/user-attachments/assets/5181417c-6080-4089-a94f-3cca04ef4199)
+Distribusi frekuensi olahraga (Exercise_Frequency) menunjukkan pola yang cenderung seragam atau merata di antara setiap kategori (0 hingga 6 hari per minggu), dengan tidak ada satu frekuensi pun yang mendominasi secara signifikan. Boxplot mengonfirmasi sebaran data yang luas meliputi semua nilai yang mungkin tanpa adanya outlier, menunjukkan variasi frekuensi olahraga yang relatif seimbang di seluruh dataset.
+
+#### Distribution of Diet_Quality & Boxplot of Diet_Quality
+![image](https://github.com/user-attachments/assets/8e92627b-6130-454c-a588-c5772149d286)
+Distribusi kualitas diet (Diet_Quality) menunjukkan pola yang mendekati normal, dengan sebagian besar individu memiliki kualitas diet menengah hingga baik, terpusat di sekitar nilai 70-80. Meskipun sebagian besar data berada dalam rentang wajar, boxplot mengidentifikasi adanya outlier di sisi bawah (kualitas diet sangat rendah) dan, yang lebih penting, di sisi atas (nilai di atas 100) yang harus diverifikasi dan ditangani karena melebihi skala maksimum yang ditentukan (0-100).
+
+#### Distribution of Sleep_Hours & Boxplot of Sleep_Hours
+![image](https://github.com/user-attachments/assets/996e7f60-3388-4b60-82b0-af3a3766093c)
+Distribusi durasi tidur (Sleep_Hours) menunjukkan pola yang mendekati normal, dengan mayoritas individu tidur antara 6 hingga 8 jam per malam, mencerminkan durasi tidur yang direkomendasikan. Meskipun sebagian besar data terpusat di rentang tersebut, boxplot mengidentifikasi beberapa outlier di kedua sisi ekstrem, yaitu individu dengan durasi tidur yang sangat singkat (sekitar 3 jam) dan durasi tidur yang sangat panjang (mendekati 12 jam).
+
+#### Distribution of Smoking_Status & Boxplot of Smoking_Status
+#### Distribution of Alcohol_Consumpttion & Boxplot of Alcohol_Consumpttion
+#### Distribution of Health_Score & Boxplot of Health_Score
 
 
 ### Multivariate  Analysis

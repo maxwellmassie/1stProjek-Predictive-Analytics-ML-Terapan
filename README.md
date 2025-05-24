@@ -111,6 +111,35 @@ dari hasil df.describe() dapat lihat:
 
 Statistik deskriptif menunjukkan bahwa dataset terdiri dari 1.000 entri dengan 8 fitur. Rata-rata usia peserta adalah 40 tahun, dengan BMI sekitar 25. Aktivitas olahraga rata-rata 2–3 kali per minggu, diet bernilai sekitar 70, dan waktu tidur sekitar 7 jam. Setengah dari peserta merokok, dan konsumsi alkohol rata-rata sekitar 3 unit. Skor kesehatan rata-rata berada di angka 85, dengan nilai minimum sekitar 29 dan maksimum 100, menunjukkan sebaran yang cukup luas antar individu.
 
+#### Mengecek & Menampilkan Missing Value
+
+| Kolom                | Missing Values |
+|----------------------|----------------|
+| Age                  | 0              |
+| BMI                  | 0              |
+| Exercise_Frequency   | 0              |
+| Diet_Quality         | 0              |
+| Sleep_Hours          | 0              |
+| Smoking_Status       | 0              |
+| Alcohol_Consumption  | 0              |
+| Health_Score         | 0              |
+
+**Total Missing Values di Dataset: 0**
+
+dari hasil df.isnull() dapat lihat:
+tidak da misisng value pada dataset, sehingga tidak perlu dilakukan imputasi atau pembersihan khusus terkait data yang hilang sebelum melanjutkan analisis dan pemodelan.
+
+#### Mengecek & Menampilkan Duplikat Data
+
+| Keterangan          | Jumlah |
+|---------------------|--------|
+| Data Duplikat       | 0      |
+
+dari hasil df.duplicated() dapat lihat:
+Hasilnya menunjukkan jumlah data duplikat adalah 0, yang berarti tidak ada baris data yang sama persis, sehingga dataset benar-benar bersih dan siap digunakan untuk proses selanjutnya tanpa perlu penghapusan data duplikat.
+
+
+
 ## Data Preparation
 Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
 

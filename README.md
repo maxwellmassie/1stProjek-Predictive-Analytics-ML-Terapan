@@ -173,6 +173,7 @@ Berdasarkan box plot tersebut, terlihat bahwa Health Score untuk kedua kelompok 
 
 #### Scatter plot BMI vs Health_Score
 ![image](https://github.com/user-attachments/assets/54579400-c71e-4af6-b905-bbd63d3c1127)
+
 Berdasarkan scatter plot BMI vs Health Score, terlihat bahwa tidak ada korelasi linear yang kuat antara kedua variabel tersebut. Meskipun sebagian besar Health Score cenderung tinggi (di atas 70) terutama pada rentang BMI sekitar 15-25, sebaran titik-titik data menunjukkan pola yang menyebar tanpa tren naik atau turun yang jelas. Hal ini mengindikasikan bahwa perubahan BMI tidak secara konsisten memprediksi perubahan Health Score, dan banyak individu dengan berbagai nilai BMI dapat memiliki Health Score yang bervariasi.
 
 #### Correlation Map

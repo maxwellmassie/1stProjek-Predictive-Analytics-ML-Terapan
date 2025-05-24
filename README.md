@@ -91,6 +91,26 @@ dari hasil df.info() dapat lihat:
 - Jumlah data: 1000 baris dengan 8 kolom
 - 6 kolom numerik (float64) dan 2 kolom integer (int64)
 
+  #### Menampilkan Deskriptif Dataset
+
+| Statistik | Age     | BMI     | Exercise_Frequency | Diet_Quality | Sleep_Hours | Smoking_Status | Alcohol_Consumption | Health_Score |
+|-----------|---------|---------|---------------------|--------------|-------------|----------------|----------------------|---------------|
+| Count     | 1000.00 | 1000.00 | 1000.00             | 1000.00      | 1000.00     | 1000.00        | 1000.00              | 1000.00       |
+| Mean      | 40.23   | 25.35   | 2.89                | 69.95        | 6.97        | 0.50           | 3.08                 | 85.48         |
+| Std       | 11.75   | 4.99    | 2.00                | 14.97        | 1.52        | 0.50           | 2.08                 | 13.63         |
+| Min       | 1.10    | 10.30   | 0.00                | 19.91        | 2.43        | 0.00           | -3.59                | 29.11         |
+| 25%       | 32.23   | 21.97   | 1.00                | 59.95        | 5.90        | 0.00           | 1.64                 | 76.43         |
+| 50%       | 40.30   | 25.32   | 3.00                | 69.98        | 6.99        | 0.00           | 3.06                 | 87.50         |
+| 75%       | 47.78   | 28.64   | 5.00                | 80.53        | 8.05        | 1.00           | 4.49                 | 99.76         |
+| Max       | 86.23   | 40.97   | 6.00                | 110.27       | 11.64       | 1.00           | 11.11                | 100.00        |
+
+
+
+
+dari hasil df.describe() dapat lihat:
+
+Statistik deskriptif menunjukkan bahwa dataset terdiri dari 1.000 entri dengan 8 fitur. Rata-rata usia peserta adalah 40 tahun, dengan BMI sekitar 25. Aktivitas olahraga rata-rata 2–3 kali per minggu, diet bernilai sekitar 70, dan waktu tidur sekitar 7 jam. Setengah dari peserta merokok, dan konsumsi alkohol rata-rata sekitar 3 unit. Skor kesehatan rata-rata berada di angka 85, dengan nilai minimum sekitar 29 dan maksimum 100, menunjukkan sebaran yang cukup luas antar individu.
+
 ## Data Preparation
 Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
 

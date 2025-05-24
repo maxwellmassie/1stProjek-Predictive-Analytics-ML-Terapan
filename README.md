@@ -253,6 +253,7 @@ Angka 42 sering digunakan sebagai nilai default karena sifatnya yang netral dan 
 - **Memerlukan Hyperparameter Tuning**: Agar performa optimal, model ini memerlukan penyesuaian parameter
 
 #### Code Program Gradient Boosting Regressor
+melatih model dengan data X_train dan y_train
 ```python
 # Inisialisasi model GradientBoostingRegressor
 gbr_model = GradientBoostingRegressor(random_state=42)

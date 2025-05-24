@@ -338,6 +338,7 @@ $$
 
 * $SSR$ (Sum of Squares of Residuals) adalah jumlah kuadrat sisa (error)
 * $SST$ (Total Sum of Squares) adalah jumlah kuadrat total
+---
 
 **dijabarkan dengan rumus**:
 

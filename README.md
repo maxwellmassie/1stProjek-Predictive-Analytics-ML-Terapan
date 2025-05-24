@@ -25,32 +25,34 @@ Penyakit tidak menular yang disebabkan oleh gaya hidup buruk menyumbang beban be
 
 ## Business Understanding
 
-Pada bagian ini, kamu perlu menjelaskan proses klarifikasi masalah.
+Dalam beberapa dekade terakhir, gaya hidup masyarakat mengalami perubahan signifikan akibat perkembangan teknologi, urbanisasi, dan perubahan sosial. Dampak dari gaya hidup modern seperti kurang tidur, pola makan tidak sehat, serta kebiasaan merokok dan konsumsi alkohol memunculkan tantangan besar dalam bidang kesehatan masyarakat.
 
-Bagian laporan ini mencakup:
+Namun, belum tersedia banyak model prediktif yang secara kuantitatif mampu mengukur kontribusi masing-masing faktor gaya hidup terhadap kesehatan individu.
 
 ### Problem Statements
 
-Menjelaskan pernyataan masalah latar belakang:
-- Pernyataan Masalah 1
-- Pernyataan Masalah 2
-- Pernyataan Masalah n
+- 1. Faktor gaya hidup manakah yang paling berpengaruh terhadap Health Score seseorang?
+- 2. Dapatkah dibangun model prediktif untuk mengestimasi Health Score hanya berdasarkan data gaya hidup?
+- Seberapa baik performa model dan model terbaik sebagai solusi ?
 
 ### Goals
 
 Menjelaskan tujuan dari pernyataan masalah:
-- Jawaban pernyataan masalah 1
-- Jawaban pernyataan masalah 2
-- Jawaban pernyataan masalah n
+- Mengidentifikasi faktor-faktor gaya hidup yang paling berdampak terhadap Health Score.
+- Membangun model regresi prediktif berbasis data gaya hidup.
+- Mengevaluasi performa model menggunakan metrik R², MAE, dan RMSE.
 
-Semua poin di atas harus diuraikan dengan jelas. Anda bebas menuliskan berapa pernyataan masalah dan juga goals yang diinginkan.
+### Solution Statement
 
-**Rubrik/Kriteria Tambahan (Opsional)**:
-- Menambahkan bagian “Solution Statement” yang menguraikan cara untuk meraih goals. Bagian ini dibuat dengan ketentuan sebagai berikut: 
+- **Solusi 1**: Menggunakan **Linear Regression** untuk mengestimasi Health Score berdasarkan variabel gaya hidup.
 
-    ### Solution statements
-    - Mengajukan 2 atau lebih solution statement. Misalnya, menggunakan dua atau lebih algoritma untuk mencapai solusi yang diinginkan atau melakukan improvement pada baseline model dengan hyperparameter tuning.
-    - Solusi yang diberikan harus dapat terukur dengan metrik evaluasi.
+- **Solusi 2**: Menggunakan **GradientBoostingRegressor** untuk meningkatkan akurasi prediksi dan mengidentifikasi faktor gaya hidup paling berpengaruh. Selain itu, melakukan **analisis *feature importance*** untuk mengidentifikasi faktor gaya hidup paling dominan yang memengaruhi Health Score menurut model ini.
+
+### Evaluasi Keberhasilan
+Keberhasilan proyek ini akan diukur menggunakan tiga metrik evaluasi utama dalam regresi:
+- **MAE (Mean Absolute Error)**: Menghitung rata-rata selisih absolut antara nilai prediksi dan nilai aktual. Semakin kecil nilai MAE, semakin akurat prediksi model.
+- **MSE (Mean Squared Error)**: Mengukur rata-rata kuadrat dari selisih antara nilai prediksi dan nilai aktual. MSE memberikan penalti lebih besar terhadap kesalahan prediksi yang besar, sehingga membantu mengidentifikasi seberapa stabil dan sensitif model terhadap outlier.
+- **R² (Koefisien Determinasi)**: Mengukur proporsi variansi dari Health Score yang dapat dijelaskan oleh model. Nilai R² yang mendekati 1 menunjukkan bahwa model memiliki kemampuan prediksi yang baik.
 
 ## Data Understanding
 Paragraf awal bagian ini menjelaskan informasi mengenai data yang Anda gunakan dalam proyek. Sertakan juga sumber atau tautan untuk mengunduh dataset. Contoh: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Restaurant+%26+consumer+data).

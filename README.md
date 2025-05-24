@@ -68,8 +68,28 @@ Dataset ini digunakan untuk menganalisis dampak berbagai faktor gaya hidup terha
 - **Alcohol_Consumption**: Rata-rata jumlah konsumsi alkohol per minggu dalam satuan unit. Bertipe _continuous_.
 - **Health_Score**: Skor kesehatan yang dihitung berdasarkan faktor-faktor gaya hidup di atas, mencerminkan status kesehatan secara keseluruhan. Skala 0–100, bertipe _continuous_.
 
-**Rubrik/Kriteria Tambahan (Opsional)**:
-- Melakukan beberapa tahapan yang diperlukan untuk memahami data, contohnya teknik visualisasi data atau exploratory data analysis.
+### Exploratory Data Analysis (EDA)
+
+- Menampilkan Info dataset
+
+| No | Kolom                | Jumlah Non-Null | Tipe Data |
+|----|----------------------|------------------|-----------|
+| 0  | Age                  | 1000 non-null    | float64   |
+| 1  | BMI                  | 1000 non-null    | float64   |
+| 2  | Exercise_Frequency   | 1000 non-null    | int64     |
+| 3  | Diet_Quality         | 1000 non-null    | float64   |
+| 4  | Sleep_Hours          | 1000 non-null    | float64   |
+| 5  | Smoking_Status       | 1000 non-null    | int64     |
+| 6  | Alcohol_Consumption  | 1000 non-null    | float64   |
+| 7  | Health_Score         | 1000 non-null    | float64   |
+
+Total entri: **1000**  
+Tipe data: **float64 (6 kolom)**, **int64 (2 kolom)**  
+Ukuran memori: ~62.6 KB
+
+dari hasil df.info() dapat lihat:
+- Jumlah data: 1000 baris dengan 8 kolom
+- 6 kolom numerik (float64) dan 2 kolom integer (int64)
 
 ## Data Preparation
 Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.

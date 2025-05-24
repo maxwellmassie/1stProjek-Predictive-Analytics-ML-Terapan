@@ -55,7 +55,8 @@ Keberhasilan proyek ini akan diukur menggunakan tiga metrik evaluasi utama dalam
 - **R² (Koefisien Determinasi)**: Mengukur proporsi variansi dari Health Score yang dapat dijelaskan oleh model. Nilai R² yang mendekati 1 menunjukkan bahwa model memiliki kemampuan prediksi yang baik.
 
 ## Data Understanding
-Paragraf awal bagian ini menjelaskan informasi mengenai data yang Anda gunakan dalam proyek. Sertakan juga sumber atau tautan untuk mengunduh dataset. Contoh: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Restaurant+%26+consumer+data).
+Dataset ini digunakan untuk menganalisis dampak berbagai faktor gaya hidup terhadap Health Score seseorang dengan pendekatan regresi. Data ini mencakup variabel-variabel seperti usia, indeks massa tubuh (BMI), frekuensi olahraga, kualitas diet, durasi tidur, status merokok, dan konsumsi alkohol. Dataset ini sangat cocok untuk eksplorasi data, pembangunan model machine learning, serta pemahaman hubungan antara gaya hidup dan kesehatan. 
+- Health and Lifestyle Data for Regression: [Kaggle](https://www.kaggle.com/datasets/pratikyuvrajchougule/health-and-lifestyle-data-for-regression/).
 
 Selanjutnya uraikanlah seluruh variabel atau fitur pada data. Sebagai contoh:  
 

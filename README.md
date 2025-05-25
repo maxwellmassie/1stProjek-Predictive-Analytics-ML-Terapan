@@ -298,8 +298,7 @@ plt.show()
 Berdasarkan grafik Feature Importance dari model Gradient Boosting Regressor, Diet_Quality merupakan faktor yang paling penting dalam memprediksi Health Score dengan importance score tertinggi (0.522). Disusul oleh BMI (0.212), Exercise_Frequency (0.087), dan Sleep_Hours (0.082) yang juga memiliki pengaruh signifikan. Sementara itu, Age, Alcohol_Consumption, dan Smoking_Status menunjukkan tingkat kepentingan yang relatif jauh lebih rendah dalam memprediksi Health Score.
 
 
-## Evaluation
-# **8. Evaluasi**
+## Evaluasi
 
 Menggunakan 3 metrik evaluasi:
 1. **MAE (Mean Absolute Error)** adalah Rata-rata dari kesalahan yang dihitung berdasarkan nilai absolut antara nilai sebenarnya dan nilai prediksi. dengan rumus sebagai berikut:
